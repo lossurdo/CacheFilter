@@ -32,11 +32,11 @@ The example above forces expiration of file1.js and file2.js whenever pages load
 
 Lines below show Log4J console when it is in action:
 
-2013-07-06 14:13:30,686 DEBUG [http-bio-8084-exec-10] (ExpiresFilter.java:68) - Web.xml NOCACHE parameter: file1.js,file2.js
-2013-07-06 14:13:32,701 DEBUG [http-bio-8084-exec-9] (ExpiresFilter.java:52) - Expiring /CacheFilterTest/file1.js
-2013-07-06 14:13:32,703 DEBUG [http-bio-8084-exec-9] (ExpiresFilter.java:59) - Changing file Header: /CacheFilterTest/file1.js
-2013-07-06 14:13:32,709 DEBUG [http-bio-8084-exec-1] (ExpiresFilter.java:52) - Expiring /CacheFilterTest/file2.js
-2013-07-06 14:13:32,709 DEBUG [http-bio-8084-exec-1] (ExpiresFilter.java:59) - Changing file Header: /CacheFilterTest/file2.js
-2013-07-06 14:13:32,718 DEBUG [http-bio-8084-exec-1] (ExpiresFilter.java:96) - Header changed successfully
+2013-07-06 14:13:30,686 DEBUG (ExpiresFilter.java:68) - Web.xml NOCACHE parameter: file1.js,file2.js
+2013-07-06 14:13:32,701 DEBUG (ExpiresFilter.java:52) - Expiring /CacheFilterTest/file1.js
+2013-07-06 14:13:32,703 DEBUG (ExpiresFilter.java:59) - Changing file Header: /CacheFilterTest/file1.js
+2013-07-06 14:13:32,709 DEBUG (ExpiresFilter.java:52) - Expiring /CacheFilterTest/file2.js
+2013-07-06 14:13:32,709 DEBUG (ExpiresFilter.java:59) - Changing file Header: /CacheFilterTest/file2.js
+2013-07-06 14:13:32,718 DEBUG (ExpiresFilter.java:96) - Header changed successfully
 
 Hope you enjoy!
