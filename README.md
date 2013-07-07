@@ -4,7 +4,7 @@ CacheFilter
 Servlet filter used to force browsers to download files from Java servers even if it has been cached.
 
 --
-At work, several times I had to force the reload of the JavaScript files browser. Often this involved proprietary applications. And it was not interesting to ask users clear their caches. So I wrote this code, where I can choose which files should be forced to expire when loaded.
+At work, several times I had to force the reload of the JavaScript files in browser. Often this involved proprietary applications. And it was not interesting to ask users clear their caches. So I wrote this code, where I can choose which files should be forced to expire when loaded. So everytime I edit a file I am sure it reloads in all user's browsers.
 
 --
 How to configure:
