@@ -13,7 +13,25 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
-
+   
+  <build>
+      <plugins>
+          <plugin>
+              <groupId>com.f0gg</groupId>
+              <artifactId>unmaven-maven-plugin</artifactId>
+              <version>1.0</version>          
+              <executions>
+                  <execution>
+                      <goals>
+                          <goal>unmaven</goal>
+                      </goals>
+                      <phase>package</phase>
+                  </execution>
+              </executions>    
+          </plugin>
+      </plugins>
+  </build>
+   
   <dependencies>
     <dependency>
       <groupId>log4j</groupId>
