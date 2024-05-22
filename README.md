@@ -7,23 +7,25 @@ Servlet filter used to force browsers to download files from Java servers even i
 ## How to configure:
 
 Edit your `web.xml` project file and add these lines:
+
 ```xml
-    <filter>
-        <filter-name>ExpiresFilter</filter-name>
-        <filter-class>com.f0gg.cachefilter.ExpiresFilter</filter-class>
-        <init-param>
-            <param-name>nocache</param-name>
-            <param-value>file1.js,file2.js</param-value>
-        </init-param>
-    </filter>
-    <filter-mapping>
-        <filter-name>ExpiresFilter</filter-name>
-        <url-pattern>/*</url-pattern>
-        <dispatcher>REQUEST</dispatcher>
-        <dispatcher>FORWARD</dispatcher>
-        <dispatcher>INCLUDE</dispatcher>
-        <dispatcher>ERROR</dispatcher>
-    </filter-mapping>
+
+<filter>
+    <filter-name>ExpiresFilter</filter-name>
+    <filter-class>com.lossurdo.cachefilter.ExpiresFilter</filter-class>
+    <init-param>
+        <param-name>nocache</param-name>
+        <param-value>file1.js,file2.js</param-value>
+    </init-param>
+</filter>
+<filter-mapping>
+<filter-name>ExpiresFilter</filter-name>
+<url-pattern>/*</url-pattern>
+<dispatcher>REQUEST</dispatcher>
+<dispatcher>FORWARD</dispatcher>
+<dispatcher>INCLUDE</dispatcher>
+<dispatcher>ERROR</dispatcher>
+</filter-mapping>
 ```
 The example above forces expiration of `file1.js` and `file2.js` whenever pages load.
 
